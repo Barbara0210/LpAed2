@@ -5,7 +5,7 @@ import edu.princeton.cs.algs4.*;
 import java.util.*;
 
 
-public class PoiRestaurante extends  POI {
+public class PoiRestaurante  {
 
   public Integer horarioAbertura;
 
