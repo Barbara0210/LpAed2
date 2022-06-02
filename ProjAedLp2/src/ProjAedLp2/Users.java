@@ -7,20 +7,12 @@ import java.util.*;
 
 public class Users extends Person {
 
-  public Users(Integer tipoUser, List<Logs> consulta, List<POI> visita, List<POI> pOI) {
+  public Users(Integer tipoUser, List<POI> visita, List<POI> pOI) {
     this.tipoUser = tipoUser;
-    this.consulta = consulta;
     this.visita = visita;
     this.pOI = pOI;
   }
 
-  public List<Logs> getConsulta() {
-    return consulta;
-  }
-
-  public void setConsulta(List<Logs> consulta) {
-    this.consulta = consulta;
-  }
 
   public List<POI> getVisita() {
     return visita;
@@ -37,22 +29,18 @@ public class Users extends Person {
   public void setpOI(List<POI> pOI) {
     this.pOI = pOI;
   }
-
-  public Integer tipoUser;
-
-  public List<Logs> consulta;
-
-  public List<POI> visita;
-
-  public List<POI> pOI;
-
   public int getTipoUser() {
     return tipoUser;
   }
-
   public void setTipoUser(int tipoUser) {
     this.tipoUser = tipoUser;
   }
+
+
+  public Integer tipoUser;
+  public List<Logs> consulta;
+  public List<POI> visita;
+  public List<POI> pOI;
 
 
   /**
@@ -73,6 +61,10 @@ public class Users extends Person {
    * funcao para editar o utilizador
    */
   public void editarUser() {
+  }
+
+  public void setTipoUser(Integer tipoUser) {
+    this.tipoUser = tipoUser;
   }
 
   /**
@@ -101,4 +93,9 @@ public class Users extends Person {
   public void pesquisarUser() {
   }
 
+  public static void main(String[] args) {
+
+
+
+  }
 }

@@ -21,6 +21,9 @@ public class Tags {
     this.nodes = nodes;
     this.pOI = pOI;
   }
+  public List<Ways> ways;
+  public List<Nodes> nodes;
+  public List<POI> pOI;
 
   public HashMap<String, ArrayList> getTag() {
     return tag;
@@ -61,12 +64,17 @@ public class Tags {
 
   /**
    * Função que insere uma tag numa hashmap
-   * @param tag estrutura do tipo haspmap
-   * @param key key do hashmap
    * @param lista value do hashmap, array list onde a tag é utilizada
    */
-  public static void inserirTag(HashMap tag,String key,ArrayList lista) {
-    tag.put(key,lista);
+  public static void inserirTagFile(HashMap<String, HashMap<String, String>> tags,String hashkey,ArrayList<Tags> lista) {
+
+    lista.forEach((item) -> {
+      HashMap<String, String> tag = new HashMap<String, String>();
+
+
+      tag.put("item","hashedInfo" );
+      tags.put("tag", tag );
+    });
 
 
   }
@@ -116,21 +124,6 @@ public class Tags {
 
 
 
-    public List<Ways> ways;
-    /**
-    * 
-    *
-   */
-  public List<Nodes> nodes;
-    /**
-    * 
-    *
-   */
-    /**
-    * 
-    *
-   */
-  public List<POI> pOI;
 
 
 
